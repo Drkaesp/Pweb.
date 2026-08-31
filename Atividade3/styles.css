@@ -1,0 +1,236 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Navegação */
+nav {
+    background-color: #333;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #667eea;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Seções */
+section {
+    background-color: white;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #667eea;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+section h3 {
+    color: #764ba2;
+    margin: 1.5rem 0 1rem 0;
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Artigos */
+article {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-left: 4px solid #667eea;
+    border-radius: 5px;
+}
+
+article h3 {
+    color: #667eea;
+    margin-top: 0;
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Listas */
+ul, ol {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+ul li, ol li {
+    margin: 0.5rem 0;
+}
+
+ul li {
+    list-style-type: square;
+}
+
+/* Links */
+a {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: white;
+}
+
+table thead {
+    background-color: #667eea;
+    color: white;
+}
+
+table th, table td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+footer h3 {
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+footer a {
+    color: #667eea;
+}
+
+footer a:hover {
+    color: #a8b2f1;
+}
+
+/* Quebras de linha e destaques */
+strong {
+    color: #764ba2;
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    section {
+        padding: 1rem;
+    }
+    
+    table {
+        font-size: 0.9rem;
+    }
+    
+    table th, table td {
+        padding: 0.5rem;
+    }
+}
+
+/* Cores específicas para destaque */
+mark {
+    background-color: #fff3cd;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+} 
