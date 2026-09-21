@@ -1,0 +1,116 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Div principal 500x500 */
+.box {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    transition: background-color 0.3s ease;
+}
+
+/* Todos os h2 começam escondidos */
+.box h2 {
+    display: none;
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* ========================================== */
+/* BREAKPOINTS - Mudança de cor e texto       */
+/* ========================================== */
+
+/* Até 420px - Cinza */
+@media (max-width: 420px) {
+    .box {
+        background-color: gray;
+    }
+    .texto-cinza {
+        display: block;
+    }
+}
+
+/* 421px até 768px - Laranja */
+@media (min-width: 421px) and (max-width: 768px) {
+    .box {
+        background-color: orange;
+    }
+    .texto-laranja {
+        display: block;
+    }
+}
+
+/* 769px até 1024px - Magenta */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .box {
+        background-color: #ff00ff;
+    }
+    .texto-magenta {
+        display: block;
+    }
+}
+
+/* 1025px até 1080px - Vermelho */
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .box {
+        background-color: #ff6347;
+    }
+    .texto-vermelho {
+        display: block;
+    }
+}
+
+/* 1081px até 1366px - Roxo */
+@media (min-width: 1081px) and (max-width: 1366px) {
+    .box {
+        background-color: #9370db;
+    }
+    .texto-roxo {
+        display: block;
+    }
+}
+
+/* 1367px até 1920px - Dourado */
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .box {
+        background-color: #ffd700;
+    }
+    .texto-dourado {
+        display: block;
+    }
+}
+
+/* Maior que 1920px - Verde */
+@media (min-width: 1921px) {
+    .box {
+        background-color: green;
+    }
+    .texto-verde {
+        display: block;
+    }
+}
